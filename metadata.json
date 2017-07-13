@@ -1,0 +1,15 @@
+{
+  "name": "mattkent-nginx",
+  "version": "0.1.0",
+  "author": "mattkent",
+  "summary": "this module is going to manage Nginx.",
+  "license": "Apache-2.0",
+  "source": "git@github.com:mattkent/puppet-nginx.git",
+  "project_page": "https://github.com/mattkent/puppet-nginx",
+  "issues_url": null,
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+
