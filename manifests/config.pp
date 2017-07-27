@@ -1,4 +1,4 @@
-class ngins::config(
+class nginx::config(
   String $ensure                = $::nginx::config_ensure,
   String $config_dir            = $::nginx::config_dir,
   String $mode                  = $::nginx::config_mode,
