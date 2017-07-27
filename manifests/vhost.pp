@@ -18,7 +18,7 @@ define nginx::vhost(
     mode => $mode,
     owner => $owner,
     group => $group,
-    notifiy => Service['nginx_service'],
+    notify => Service['nginx_service'],
   }
 
   file { $vhost_docroot:
