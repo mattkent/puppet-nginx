@@ -27,4 +27,12 @@ define nginx::vhost(
     owner => $owner,
     group => $group,
   }
+
+  file { $vhost_dir:
+    ensure => directroy,
+    mode => '0755',
+    owner => $owner,
+    group => $group,
+  }
+
 }
