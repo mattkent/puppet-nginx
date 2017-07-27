@@ -10,6 +10,7 @@ class nginx::config(
   Optional[String] $vdir_enable = $::nginx::config_vdir_enable,
   String $process_user          = $::nginx::config_process_user,
   String $docroot               = $::nginx::docroot,
+  String $vhost_dir             = $::nginx::vhost_dir,
 ) {
   file { 'nginx_conf':
     ensure => $ensure,
@@ -32,4 +33,13 @@ class nginx::config(
     owner  => $owner,
     group  => $group,
   }
+
+  file { $vhost_dir:
+    ensure => directory,
+    recurse => true,
+    mode => '0755',
+    owner => $owner,
+    group => $group,
+  }
+
 }

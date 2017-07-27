@@ -29,12 +29,4 @@ define nginx::vhost(
     group => $group,
   }
 
-  file { $vhost_dir:
-    ensure => directory,
-    recurse => true,
-    mode => '0755',
-    owner => $owner,
-    group => $group,
-  }
-
 }
