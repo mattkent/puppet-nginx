@@ -3,7 +3,7 @@ class nginx::service(
   String $service_name         = $::nginx::service_name,
   String $pattern              = $::nginx::service_pattern,
   Boolean $enable              = $::nginx::service_enable,
-  Boolean $hasstatus           = $::nginx::service_hassstatus,
+  Boolean $hasstatus           = $::nginx::service_hasstatus,
   Boolean $hasrestart          = $::nginx::service_hasrestart,
 
 ) {
