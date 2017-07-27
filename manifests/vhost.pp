@@ -23,6 +23,7 @@ define nginx::vhost(
 
   file { $vhost_docroot:
     ensure => directroy,
+    recurse => true,
     mode => '0755',
     owner => $owner,
     group => $group,
@@ -30,6 +31,7 @@ define nginx::vhost(
 
   file { $vhost_dir:
     ensure => directroy,
+    recurse => true,
     mode => '0755',
     owner => $owner,
     group => $group,
